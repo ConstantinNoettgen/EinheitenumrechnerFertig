@@ -2,21 +2,57 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Der Einheitenumrechner</title>
+    <title>Der universelle Längenumrechner</title>
     <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/main.css">
 </head>
-<body>
-<img src="../img/images.jpg" height="168" width="300"/>
-<h1 for="meter">Gib hier die Anzahl von Metern ein, die du umrechnen möchtest:</h1><input type="number" id="meter">
-<button id="button1" onclick="gesamteRechnung()">Berechne!</button>
-<h2>Anzahl Kilometer:</h2>
-<p id="Ausgabe1" >  </p>
-<h3>Anzahl Meilen:</h3>
-<p id="Ausgabe2"> </p>
-<h4>Anzahl Yards:</h4>
-<p id="Ausgabe3"> </p>
-<h5>Anzahl Fuß:</h5>
-<p id="Ausgabe4"></p>
 
+<body>
+<img id="2" src="../img/weltbearbeitet.jpg" height="612" width="612" alt="2" />
+    <h1>Der universelle Längenumrechner</h1>
+    <p>Dieser Rechner ist dazu konzipiert, aus der Angabe von Metern alle gemein genutzen Maßeinheiten der Welt zu errechnen. Viel Spaß!</p>
+
+    <p>Hier erfährst du noch ein wenig mehr über die Einheiten die du gleich ausrechnen wirst. Falls du nichts mehr erfahren möchtest click einfach auf "Zeig mir weniger". </p>
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <div id="text_html">
+        <p>
+            <a href="#" title="Verbergen" onclick="hide_elements('text_html');">Zeig mir weniger!</a>
+        </p>
+        <p>Der Meter: Der Meter ist die Basiseinheit der Länge im Internationalen Einheitensystem (SI) und in anderen metrischen Einheitensystemen. Ein Meter ist definiert als die Länge der Strecke, die das Licht im Vakuum während der Dauer von 1/299 792 458 Sekunde zurücklegt.</p>
+        <p>Die Meile: Die Meile ist eine Längenmaßeinheit außerhalb des Internationalen Einheitensystems. Die heute gebräuchlichsten Einheiten sind die Seemeile und die englische statute mile. In Deutschland galten bis ins späte 19. Jahrhundert die deutsche Meile oder Landmeile und die geographische Meile. </p>
+        <p>Der Yard: Das Yard ist eine grob 0,9 m lange Einheit der Länge, die im mittelalterlichen England ihren Ursprung hat und Bestandteil des angloamerikanischen Maßsystems ist. Das Yard entspricht 3 „Feet“ oder 36 „Inches“.</p>
+        <p>Der Fuß: Der Fuß ist neben der Fingerbreite, der Handbreite, der Handspanne, der Elle, dem Schritt und dem Klafter eine der ältesten Längeneinheiten.</p>
+
+    </div>
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    <h4>Gib die Anzahl der Meter hier ein:</h4>
+    <h2 for="meter"></h2><input type="number" id="meter">
+    <button id="button1" onclick="gesamteRechnung()">Berechne!</button>
+
+    <h3>Deine Ergebnisse</h3>
+    <table cellspacing="2" >
+        <thead></thead>
+
+        <tr>
+            <th>Maßeinheit</th>
+            <td>umgerechneter Wert</td>
+        </tr>
+        <tr>
+            <th>Anzahl Kilometer</th>
+            <td id="TabelleKilometer"></td>
+        </tr>
+        <tr>
+            <th>Anzahl Meilen</th>
+            <td id="TabelleMeilen"></td>
+        </tr>
+        <tr>
+            <th>Anzahl Yards</th>
+            <td id="TabelleYards"></td>
+        </tr>
+        <tr>
+            <th>Anzahl Fuß</th>
+            <td id="TabelleFuß"></td>
+        </tr>
+    </table>
 </body>
 </html>

@@ -1,8 +1,107 @@
-body {
-    align-content: center;
-    background: url("../img/images.jpg") no-repeat center center fixed;
+body { text-align: center;
+    background-color: aquamarine;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    font-family: Bahnschrift , serif;
 }
+h2{font-size: medium;
+    width: 45%;
+    padding: 2%;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%, -50%);
+ }
+input {
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3em; padding: 5px 12px;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: black;
+    border: 1px solid silver;
+    background-image: linear-gradient(to top, gainsboro 0%, white 90%);
+    border-radius: 20px;
+}
+h3{font-size: medium;
+    width: 45%;
+    padding: 2%;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+    transform: translate(-50%, -50%);
+    text-decoration: underline;
+    }
+h1 {
+    font-size: large;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-family: Bahnschrift, serif;
+    }
+table{
+    width: 45%;
+    padding: 2%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    background-color: aquamarine;
+    border-width: thick;
+    border-style: double;
+    border-color: black;
+    font-family: Bahnschrift, serif;
+
+}
+th{
+    font-size: large;
+    font-family: Bahnschrift, serif;
+}
+div{
+    font-size: small;
+    font-family: Bahnschrift, serif;
+}
+button{
+    opacity: 100%;
+    width: 10%;
+    position: absolute;
+    left: 65%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    display:inline-block;
+    margin:20px;
+    text-decoration:none;
+    font-size:16px;
+    border:1px solid #404040;
+    color:#404040;
+    background-color:#E7E7E7;
+    padding:3px 7px;
+    font-family: Bahnschrift, serif;
+}
+h4 {
+    text-decoration: underline;
+    width: 10%;
+    padding: 2%;
+    position: absolute;
+    left: 34%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+
+}
+
+img{
+    opacity: 0.7 ;
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+    float: left;
+    border-radius: 100%; // full circular image}
+
+
+
+
+
